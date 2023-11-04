@@ -1,0 +1,14 @@
+.preload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preload img {
+  width: 70%;
+}
+.preloadContainer {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}

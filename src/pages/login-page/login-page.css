@@ -1,0 +1,109 @@
+.login-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primaryColor);
+  /* background-image: url(../../assets/images/azzrk-login-back.webp); */
+  /* background-position: center; */
+  /* background-position: center; */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: auto;
+}
+.login-page .outlet {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(118, 197, 245, 0.5),
+    rgba(188, 230, 255, 1)
+  );
+  border-radius: 31px;
+}
+.login-page .outlet-parent .outlet-subparent {
+  position: absolute;
+  bottom: 0;
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    rgba(118, 197, 245, 0.5),
+    rgba(153, 216, 255, 1)
+  );
+  z-index: 1;
+  border-radius: 31px;
+}
+.login-page .outlet-parent .outlet-child {
+  position: absolute;
+  bottom: 0;
+  height: 96vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 2;
+  border-radius: 31px;
+}
+.login-poster {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 30rem;
+  cursor: pointer;
+}
+.login-page .login-poster .logo {
+  width: 90%;
+}
+.login-page .login-poster .man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70%;
+}
+.login-page-logo {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .login-page .login-poster .man {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .login-page {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+  .login-poster {
+    display: none;
+  }
+  .login-form-comp .login-form .form-sec input {
+    width: 50vw;
+  }
+  .login-page-logo {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 24%;
+  }
+  .login-page-logo .login-azzrak-logo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .login-form-comp .login-form .form-sec input {
+    width: 80vw;
+  }
+  .login-form-comp {
+    margin-top: 5rem;
+  }
+}

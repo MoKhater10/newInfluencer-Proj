@@ -1,0 +1,122 @@
+.social-media-register form .social-media-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.social-media-register form .social-media-form .form-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.2rem;
+}
+.social-media-register form .social-media-form .form-sec label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.social-media-register form .social-media-form .form-sec .input {
+  padding: 0.7rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+}
+.contact-info-register form .social-media-form .form-sec input::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+}
+.social-media-register form .social-media-form .form-sec .account {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social-media-register form .social-media-form .form-sec .account img {
+  width: 26px;
+  height: 26px;
+}
+.social-media-register form .followers {
+  display: flex;
+}
+.social-media-register form .followers select {
+  background: #dddcdcba;
+  height: 3rem;
+  width: 39px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.social-media-register form .followers select option {
+  text-align: center;
+}
+
+.input-follower {
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.social-media-form .social-media-form-right,
+.social-media-form .social-media-form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.social-media-register form .followers select {
+  border-radius: 3px;
+}
+@media only screen and (max-width: 992px) {
+  .social-media-register form .social-media-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-media-register form .social-media-form .form-sec label {
+    font-size: 13px;
+  }
+  .social-media-register form .social-media-form {
+    grid-template-columns: 1fr;
+  }
+  .social-media-register {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media-register form .social-media-form .form-sec .input,
+  .social-media-register .followers {
+    width: 80vw;
+  }
+  .social-media-register form .social-media-form .form-sec input::placeholder {
+    font-size: 12px;
+  }
+  .register-btns .btn-next,
+  .register-btns .btn-back {
+    font-size: 12px;
+  }
+  .social-media-register form .social-media-form .form-sec {
+    align-items: flex-start;
+  }
+  .social-media-register .register-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .social-media-register .register-btns .btn-next {
+    width: 80vw;
+    margin: 0;
+    font-size: 15px;
+  }
+  .social-media-register .register-btns .btn-back {
+    width: 80vw;
+    font-size: 15px;
+  }
+  .social-media-register .register-btns .btn-back {
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+  .social-media-register form .social-media-form {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  .social-media-register form .followers select {
+    width: 50px;
+  }
+}

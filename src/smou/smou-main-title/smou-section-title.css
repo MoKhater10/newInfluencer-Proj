@@ -1,0 +1,16 @@
+.smou-section-title {
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .smou-section-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .smou-section-title {
+    font-size: 36px;
+  }
+}

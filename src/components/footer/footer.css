@@ -1,0 +1,129 @@
+.footer {
+  padding: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer .footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__inner .footer-logo {
+  width: 14%;
+}
+.footer .footer__inner .footer-logo img {
+  width: 100%;
+}
+.footer .footer__inner h1 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 3rem;
+}
+.footer .footer__inner .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+.footer-list li a {
+  color: #fff;
+}
+.footer .footer__inner .footer-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer .footer__inner .footer-list li a p {
+  font-size: 20px;
+}
+.footer .footer-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list .active {
+  position: relative;
+}
+.footer-list .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--lineColor);
+  transition: all 0.2s;
+}
+
+@media (max-width: 992px) {
+  .footer .footer__inner .footer-list {
+    gap: 3rem;
+  }
+  .footer .footer__inner .footer-list li a p {
+    font-size: 18px;
+  }
+  .footer .footer__inner {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+  .footer .footer__inner .footer-logo {
+    text-align: center;
+    width: 30%;
+    margin-top: 1rem;
+  }
+  .footer {
+    padding: 1rem 0 0;
+  }
+  .footer .footer__inner h1 {
+    font-size: 20px;
+  }
+  .footer .footer__inner {
+    gap: 5rem;
+  }
+  .col-two {
+    text-align: center;
+  }
+  .footer-list p {
+    font-size: 16px;
+  }
+  .footer-list img {
+    width: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer .footer__inner {
+    gap: 0rem;
+  }
+  .footer .footer__inner .footer-logo {
+    width: 50%;
+  }
+  .footer .footer__inner .footer-list li a p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footer__inner .footer-list li a {
+    gap: 1rem;
+  }
+  .footer .footer__inner .footer-list li a p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 280px) {
+  .footer .footer__inner h1 {
+    margin-bottom: 2rem;
+  }
+  .col-two {
+    text-align: right;
+  }
+  .footer .footer__inner h1 {
+    font-size: 17px;
+  }
+}

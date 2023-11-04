@@ -1,0 +1,45 @@
+.profile-info form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 545px;
+
+  margin: auto;
+}
+.profile-info form div,
+.profile-info form div input {
+  width: 100%;
+}
+.profile-info form div label {
+  color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.profile-info form div input {
+  border: none;
+
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+.profile-info form div input:focus {
+  outline: none;
+}
+.profile-info form div input::placeholder {
+  color: #c2c1c1;
+}
+.profile-info form button.btn,
+.profile-info form button.btn:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+  width: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .profile-info form div label {
+    font-size: 16px;
+  }
+}

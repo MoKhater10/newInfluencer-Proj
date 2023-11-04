@@ -1,0 +1,92 @@
+/* Genral */
+:root {
+  --main-transition: 0.3s;
+  --main-font-size: 20px;
+}
+.smou-btn {
+  border: none;
+  outline: none;
+}
+/* End genral */
+
+.smou-hero {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../../smou-imgs/hero-bg.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.smou-hero .smou-hero-content {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.smou-hero .smou-hero-content .smou-main-title {
+  color: #fff;
+  font-size: 50px;
+  line-height: 108px;
+  margin-bottom: 5rem;
+}
+.smou-hero .smou-hero-content .smou-main-title span {
+  display: block;
+  font-size: 81px;
+  font-weight: 600;
+}
+.smou-hero .smou-hero-content .smou-hero-btn {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #ffffff5c;
+  border-radius: 100px;
+  visibility: visible;
+  opacity: 1;
+}
+.smou-hero .smou-hero-content .smou-hero-btn span {
+  padding: 1rem;
+  font-size: var(--main-font-size);
+}
+.smou-hero .smou-hero-content .smou-hero-btn .icon {
+  background: linear-gradient(to right, #db3737, #002762);
+  border-radius: 50%;
+  width: 4rem;
+}
+.smou-hero .smou-hero-content .smou-hero-btn .icon svg {
+  font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  .smou-hero .smou-hero-content .smou-main-title {
+    font-size: 60px;
+    margin-bottom: 2.5rem;
+    line-height: 80px;
+  }
+  .smou-hero .smou-hero-content .smou-main-title span {
+    font-size: 65px;
+  }
+}
+@media (max-width: 767px) {
+  .smou-hero .smou-hero-content .smou-hero-btn span {
+    font-size: 16px;
+    padding: 0.7rem;
+  }
+  .smou-hero .smou-hero-content .smou-hero-btn .icon {
+    width: 3.5rem;
+  }
+
+  .smou-hero .smou-hero-content .smou-main-title {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+  .smou-hero .smou-hero-content .smou-main-title span {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+}

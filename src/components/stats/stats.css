@@ -1,0 +1,70 @@
+.stats-websites {
+  border: 1px solid #9cdaff;
+  border-radius: 16px;
+  background-color: var(--cardColor);
+}
+.stats-darb {
+  border-radius: 16px;
+  background-color: var(--cardColor);
+  box-shadow: -1px 7px 10px 5px rgb(2 2 24 / 10%);
+}
+.stats p {
+  margin-bottom: 0;
+}
+.stats .circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: red;
+}
+.stats .one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+.stats .one p {
+  font-size: 25px;
+}
+
+.stats .one .social p {
+  font-size: 20px;
+}
+.stats .one span {
+  font-size: 18px;
+  color: var(--statsColor);
+}
+
+@media (max-width: 992px) {
+  .stats .one {
+    width: auto;
+  }
+  .stats .chart {
+    order: 1;
+  }
+  .stats .percent1 {
+    order: 2;
+  }
+  .stats .percent2 {
+    order: 3;
+  }
+  .stats .percent3 {
+    order: 4;
+  }
+}
+@media (max-width: 576px) {
+  .stats .one p {
+    font-size: 20px;
+  }
+  .stats .one .social p {
+    font-size: 18px;
+  }
+  .stats .circle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stats .one span {
+    font-size: 16px;
+  }
+}

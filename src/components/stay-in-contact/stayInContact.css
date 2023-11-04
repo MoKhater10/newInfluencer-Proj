@@ -1,0 +1,113 @@
+.stayInContact {
+  background: url("../../assets/images/office.webp");
+  display: none;
+}
+.stayInContact .right {
+  background-color: var(--primaryColor);
+  color: #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.stayInContact .right .image img {
+  width: 100%;
+}
+.stayInContact .right .image {
+  position: absolute;
+  top: -120px;
+  right: -25px;
+  width: 90px;
+}
+.stayInContact .right h1 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.stayInContact .right .items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.stayInContact .right .item {
+  display: flex;
+  gap: 15px;
+}
+.stayInContact .right span {
+  font-size: 20px;
+}
+.stayInContact .right .social div {
+  cursor: pointer;
+}
+.stayInContact .right .social {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.stayInContact .left {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+.stayInContact .left .image {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.stayInContact .left input,
+.stayInContact .left textarea {
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  color: #c7c7c7;
+  caret-color: var(--primaryColor);
+}
+
+@media (max-width: 992px) {
+  .stayInContact.pb-5 {
+    padding-bottom: 0 !important;
+  }
+  .row {
+    flex-direction: column;
+    /* padding-bottom: 4rem; */
+  }
+  .row .left,
+  .row .right {
+    width: 85%;
+    padding: 2rem 0;
+    margin: auto;
+  }
+  .row .items {
+    align-items: center;
+  }
+  .stayInContact .right .items {
+    align-items: flex-start;
+  }
+  .stayInContact .right h1 {
+    font-size: 20px;
+  }
+  .stayInContact .right span {
+    font-size: 16px;
+  }
+  .stayInContact .input-parent {
+    gap: 15px;
+  }
+  .stayInContact .left input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .hero .bottom p {
+    font-size: 15px;
+    line-height: 40px;
+  }
+}

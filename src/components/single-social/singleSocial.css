@@ -1,0 +1,205 @@
+.singleSocial .icons .image {
+  border: 1px solid /*var(--borderColor)*/ var(--borderColor);
+  border-radius: 12px;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* Based on subdomain */
+  background-color: var(--cardColor);
+}
+.singleSocial .icons .websites-image:hover {
+  scale: 1.1;
+  background-color: var(--primaryColor);
+}
+.singleSocial .icons .image.activeIcon {
+  scale: 1.1;
+  /* background-color: var(--primaryColor); */
+
+  /* Based on subdomain */
+  background-color: var(--activeCardColor);
+
+  box-shadow: var(--boxShadow);
+}
+.singleSocial .icons .image.darbActiveIcon {
+  scale: 1.1;
+  background: linear-gradient(to left, #0e2e4a, transparent 115%),
+    linear-gradient(to right, #2fd8d6, transparent 125%);
+}
+.singleSocial .icons .darb-image:hover {
+  scale: 1.1;
+  background: linear-gradient(to left, #0e2e4a, transparent 115%),
+    linear-gradient(to right, #2fd8d6, transparent 125%);
+}
+.singleSocial .icons .image img {
+  height: 70px;
+  object-fit: contain;
+}
+.singleSocial .allStats .websites-info {
+  border-radius: 12px;
+  background-color: var(--cardColor);
+  padding: 30px;
+}
+.singleSocial .allStats .darb-info {
+  border-radius: 12px;
+  background-color: var(--cardColor);
+  padding: 30px;
+  box-shadow: -1px 7px 10px 5px rgb(2 2 24 / 10%);
+}
+.singleSocial .allStats .info p {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .singleSocial .allStats .info p {
+    font-size: 22px;
+  }
+  .singleSocial .allStats .info .text span {
+    font-size: 18px;
+  }
+  .singleSocial .allStats .followers .text p {
+    font-size: 18px;
+  }
+  .singleSocial .allStats .followers .text h2 {
+    font-size: 22px;
+  }
+  .singleSocial .allStats .followers div p {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .singleSocial .allStats .followers div h2 {
+    font-size: 22px;
+  }
+  .singleSocial .allStats .location .head p {
+    font-size: 20px;
+  }
+}
+.singleSocial .allStats .info .image {
+  display: flex;
+  align-items: center;
+}
+.singleSocial .allStats .info span {
+  font-size: 20px;
+  color: #02244480;
+}
+.singleSocial .allStats .websites-followers {
+  border-radius: 12px;
+  background-color: var(--cardColor);
+  padding: 30px;
+}
+.singleSocial .allStats .darb-followers {
+  border-radius: 12px;
+  background-color: var(--cardColor);
+  padding: 30px;
+  box-shadow: -1px 7px 10px 5px rgb(2 2 24 / 10%);
+}
+.singleSocial .allStats .followers p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: var(--colorFollowersText);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.singleSocial .allStats .followers h2 {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: var(--statsColor);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.singleSocial .allStats .followers .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.singleSocial .allStats .websites-location {
+  border-radius: 12px;
+  background-color: var(--cardColor);
+  padding: 12px;
+}
+.singleSocial .allStats .darb-location {
+  border-radius: 12px;
+  /* background-color: var(--cardColor); */
+  padding: 12px;
+  box-shadow: -1px 7px 10px 5px rgb(2 2 24 / 10%);
+}
+.singleSocial .allStats .location .two .legends .circle {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: cadetblue;
+  border-radius: 50%;
+}
+.singleSocial .allStats .location .two .chart {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 0;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+  border: 1px solid white; */
+}
+.singleSocial .allStats .bottom .double {
+  border-radius: 12px;
+  /* background-color: var(--cardColor); */
+}
+.singleSocial .allStats .location .one .circle {
+  width: 20px;
+  height: 20px;
+  background-color: cadetblue;
+  border-radius: 50%;
+}
+.singleSocial .allStats .location p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: var(--colorFollowersText);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.singleSocial .allStats .location h2 {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: var(--primaryColor);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.bars {
+  height: 100%;
+}
+@media (max-width: 1500px) {
+  .singleSocial .allStats .location .two .legends h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .singleSocial .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1300px) {
+  .singleSocial .allStats .location .two .legends h2 {
+    font-size: 18px;
+  }
+  .singleSocial .allStats .location .two .legends .circle {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: cadetblue;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .singleSocial .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .singleSocial .allStats .location .two .legends {
+    order: 2;
+  }
+  .singleSocial .allStats .location .two .chart1 {
+    order: 1;
+  }
+}

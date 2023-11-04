@@ -1,0 +1,68 @@
+.about-smou {
+  padding: var(--main-section-padding);
+  margin: var(--main-section-margin);
+
+  background-image: linear-gradient(
+      to left,
+      rgb(219, 55, 55, 50%),
+      rgb(0, 39, 97, 50%)
+    ),
+    url(../../smou-imgs/about-smou-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-smou .about-content {
+  color: #fff;
+  text-align: center;
+}
+.about-smou .about-content .about-info {
+  max-width: 75%;
+  margin: 2rem auto 6rem;
+  font-size: 28px;
+  line-height: 50px;
+}
+.about-smou-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-smou-images .about-smou-img {
+  position: relative;
+  width: 50%;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.about-smou-images .about-smou-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 39, 9, 50%);
+  border-radius: 10px;
+}
+.about-smou-images .about-smou-img:hover {
+  width: 100%;
+}
+.about-smou-images img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .about-smou .about-content .about-info {
+    max-width: 80%;
+    margin-bottom: 4rem;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .about-smou .about-content .about-info {
+    max-width: 90%;
+  }
+  .about-smou-images {
+    flex-direction: column;
+  }
+}

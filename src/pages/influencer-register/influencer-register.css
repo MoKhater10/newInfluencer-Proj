@@ -1,0 +1,149 @@
+.inf-register-parent {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  padding: 6rem 7rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sss {
+  height: 6rem;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, white, #ffffff);
+}
+.sdd {
+  height: 7rem;
+  border-radius: 30px;
+  margin-top: -68px;
+  background-image: linear-gradient(to bottom, white, #ffffff);
+  position: relative;
+  z-index: 4;
+}
+.inf-register {
+  background-color: white;
+  padding: 2rem 4rem 1rem;
+  border-radius: 25px;
+  margin-top: -5rem;
+  z-index: 4;
+  position: relative;
+}
+.influencer-register .circles .lines div:first-child {
+  border: 1px solid black;
+}
+.influencer-register .circles .lines div:nth-child(odd) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #c2c2c2;
+}
+.influencer-register .circles .lines div.border-circle {
+  border: 1px solid black;
+}
+.influencer-register .register-title {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.influencer-register .circles .lines div.no-border-circle {
+  border: 1px solid #c2c2c2;
+}
+.influencer-register .circles .lines div:nth-child(even) {
+  display: inline-block;
+  width: 175px;
+  height: 1px;
+  background-color: #c2c2c2;
+}
+.influencer-register .circles .lines div span.circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--dotColor);
+  border: 4px solid white;
+}
+.influencer-register .register-title h6 {
+  font-size: 23px;
+  font-weight: 300;
+  margin: auto;
+  line-height: 48px;
+  color: var(--primaryColor);
+  margin-bottom: 2rem;
+}
+.influencer-register .circles .lines div span.noCircle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid white;
+}
+.influencer-register .circles .lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.influencer-register .circles .titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.influencer-register .circles .titles span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.influencer-register .circles .titles span.title {
+  color: var(--primaryColor);
+}
+.influencer-register .circles .titles span.select {
+  color: #c2c2c2;
+}
+
+.influencer-register .circles .titles span.somoueTitle {
+  color: white;
+}
+
+.right-icon {
+  padding: 4px;
+  background-color: var(--primaryColor);
+  color: var(--dotColor);
+  border-radius: 50%;
+  margin-bottom: 9px;
+  width: 19px;
+  height: 19px;
+}
+
+@media only screen and (max-width: 992px) {
+  .influencer-register .circles .titles span {
+    font-size: 16px;
+  }
+  .influencer-register .circles .titles {
+    gap: 3rem;
+  }
+  .inf-register-parent {
+    padding: 0;
+  }
+  .inf-register {
+    padding: 6rem 2rem 1rem;
+  }
+  .influencer-register .register-title h6 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .influencer-register .circles .titles {
+    gap: 4rem;
+    margin-top: 0.7rem;
+  }
+  .influencer-register .circles .titles span {
+    font-size: 12px;
+  }
+  .influencer-register .circles .lines div:nth-child(even) {
+    width: 100px;
+  }
+  .profile-info-register .influencer-form {
+    margin-top: 3rem;
+  }
+}

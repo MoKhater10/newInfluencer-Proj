@@ -1,0 +1,215 @@
+.card {
+  width: 100%;
+  background-color: var(--cardColor);
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: var(--boxShadow);
+  height: 100%;
+  border: none;
+  position: relative;
+}
+.card-padage {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20%;
+}
+.card-padage img {
+  width: 100%;
+}
+.card:hover * {
+  transition: 0.5s;
+}
+.card-websites:hover {
+  scale: 1.08;
+  background-color: var(--primaryColor);
+}
+.card:hover .person {
+  z-index: 1;
+}
+.card:hover .person .text h1 {
+  color: white;
+}
+.card:hover .person .text p {
+  color: white;
+}
+.card:hover .followers span {
+  color: white;
+}
+.card:hover .into .item {
+  border: 1px solid var(--secondryColor);
+}
+.card .into .item:hover {
+  background-color: white;
+  color: var(--primaryColor);
+}
+.card .person {
+  z-index: 2;
+  position: relative;
+}
+.card .person .text h1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primaryColor);
+}
+.card .person .text p {
+  color: var(--primaryColor);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.card .followers p {
+  font-size: 20px;
+  color: #8e9398;
+  margin-bottom: 0;
+}
+.card .followers span {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primaryColor);
+}
+.card .icons {
+  margin: auto;
+}
+.card .icons .icon {
+  cursor: pointer;
+}
+
+.card .into {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card .into .item {
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card .into .item:hover {
+  text-overflow: clip;
+}
+.btn-add-div .btn-add {
+  background-color: #ffffff;
+  color: var(--primaryColor);
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2rem;
+}
+.card:hover .btn-add {
+  display: block;
+}
+.card .person .image {
+  width: 30%;
+}
+.card .influencer-photo,
+.influencer-info-photo {
+  border-radius: 50%;
+  width: 100%;
+}
+.add-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-popup {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 2.5rem 6rem;
+}
+.add-popup h2 {
+  color: #022444;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+.add-popup h5 {
+  color: #022444;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.add-popup .actions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.add-popup .actions-btn .btn {
+  font-size: 20px;
+  padding: 10px 80px;
+  border: 1px solid #022444;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.add-popup .actions-btn .btn-yes {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.add-popup .add-influencer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.add-popup .add-influencer-info .add-influencer-details {
+  text-align: center;
+}
+.add-popup .add-influencer-info .influencer-info-img {
+  width: 30%;
+}
+.add-popup .add-influencer-info .influencer-info-img img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .card .into .item {
+    font-size: 14px;
+  }
+  .add-popup {
+    padding: 1rem 3rem 2rem;
+    max-width: 25rem;
+  }
+
+  .add-popup h2 {
+    font-size: 30px;
+    margin: 2rem auto 1rem;
+  }
+  .add-popup h5 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+  }
+  .add-popup .actions-btn .btn {
+    font-size: 14px;
+    padding: 5px 70px;
+  }
+}
+@media (max-width: 768px) {
+  .card .btn-add {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .add-popup {
+    max-width: 20rem;
+  }
+  .add-popup .actions-btn .btn {
+    font-size: 14px;
+    padding: 5px 50px;
+  }
+}

@@ -1,0 +1,32 @@
+.chart1 .metric {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: -1px 1px 9px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 9px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 9px -5px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.chart1 {
+  height: 215px;
+  width: 215px;
+  position: relative;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .chart1 {
+    height: 180px;
+    width: 180px;
+  }
+}

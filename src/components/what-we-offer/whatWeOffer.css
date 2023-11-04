@@ -1,0 +1,30 @@
+.card-con {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 23px;
+}
+
+.whatWeOffer .btn-parent-more {
+  text-align: center;
+  margin-top: 3rem;
+}
+.whatWeOffer .btn-parent-more .btn-show-more {
+  background-color: var(--primaryColor);
+  color: white;
+  width: 20%;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-con {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card-con {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+  .whatWeOffer .btn-parent-more .btn-show-more {
+    width: 35%;
+  }
+}

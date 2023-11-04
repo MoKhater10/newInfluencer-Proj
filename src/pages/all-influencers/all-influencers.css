@@ -1,0 +1,150 @@
+.all-influencers {
+  padding: 15rem 0 3rem 0;
+}
+.all-influencers .all-influencers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 75px;
+}
+.all-influencers .all-influencers-header .all-influencers-title h1 {
+  line-height: 63px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.all-influencers .all-influencers-header .all-influencers-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #b5b5b5;
+  padding: 2px 16px 2px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+.all-influencers .all-influencers-header .all-influencers-filter:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+.all-influencers .card-con {
+  margin: 4rem 0;
+}
+.all-influencers-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.all-influencers-pagination .pagination-arrow-right,
+.all-influencers-pagination .pagination-arrow-left {
+  padding: 0.8rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+.all-influencers-pagination .pagination-arrow-right {
+  background-color: var(--primaryColor);
+  color: white;
+}
+.all-influencers-pagination .pagination-arrow-left {
+  background-color: #f4f3f3;
+  color: #b6b6b6;
+}
+.all-influencers-pagination .pagination-numbers {
+  background-color: #f4f3f3;
+  display: flex;
+}
+.all-influencers-pagination .pagination-numbers span {
+  padding: 1rem;
+  transition: 0.5s;
+}
+.all-influencers-pagination .websites span:hover {
+  background-color: var(--primaryColor);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: var(--boxShadow);
+}
+.all-influencers-filter .filter-drop-down {
+  position: absolute;
+  width: 14rem;
+  border: 0.5px solid rgb(0 0 0 / 20%);
+  background-color: white;
+  margin: auto;
+  top: 50px;
+  left: -60px;
+  z-index: 3;
+  transition: all 2s ease-in-out;
+  opacity: 0;
+}
+.all-influencers-filter .filter-show {
+  transition: 0.5s;
+  opacity: 1;
+}
+.all-influencers-filter .filter-hide {
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.all-influencers-filter .filter-drop-down ul {
+  padding: 1rem;
+  margin: 0;
+}
+.all-influencers-filter .filter-drop-down ul div {
+  color: #848484;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 0.5px solid rgb(0 0 0 / 20%);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.all-influencers-filter .filter-drop-down ul div:hover {
+  color: var(--primaryColor);
+}
+
+.all-influencers-filter .filter-drop-down ul div:last-of-type {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.darb span:hover {
+  background: linear-gradient(to left, rgb(33, 202, 222), transparent 90%),
+    linear-gradient(to right, rgb(17, 212, 209), transparent 90%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: var(--boxShadow);
+}
+
+@media (max-width: 992px) {
+  .all-influencers .all-influencers-header .all-influencers-title h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .all-influencers-pagination .pagination-numbers {
+    display: none;
+  }
+  .all-influencers-pagination {
+    gap: 9rem;
+  }
+  .all-influencers .all-influencers-header .all-influencers-filter,
+  .all-influencers-filter .filter-drop-down ul div {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .all-influencers .all-influencers-header {
+    padding: 0 25px 0 36px;
+  }
+  .all-influencers-filter .filter-drop-down {
+    left: -30px;
+  }
+}
+@media (max-width: 400px) {
+  .all-influencers-filter .text {
+    font-size: 12px;
+  }
+}

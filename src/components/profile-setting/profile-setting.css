@@ -1,0 +1,71 @@
+.profile-settin-page {
+  margin-bottom: 10rem;
+}
+.profile-settin-page h1 {
+  font-size: 45px;
+  color: var(--primaryColor);
+
+  padding-top: 15rem;
+}
+.components-list {
+  width: fit-content;
+  margin: 4rem auto 2rem;
+}
+.components-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+  background-color: #f4f3f3;
+  list-style: none;
+  padding: 1rem 3rem;
+}
+.components-list li a {
+  color: var(--componentsListColor);
+  font-size: 28px;
+  padding: 0 2rem;
+}
+.components-list li a.active {
+  color: black;
+  background-color: #fff;
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+}
+@media (max-width: 991px) {
+  .components-list li a {
+    padding: 0 3rem;
+    font-size: 18px;
+  }
+  form div label {
+    margin-bottom: 5px;
+  }
+  .components-list div {
+    column-gap: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .profile-settin-page h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .components-list li a {
+    padding: 0 2rem;
+    font-size: 15px;
+  }
+  .components-list div {
+    column-gap: 0rem;
+  }
+  .profile-settin-page h1 {
+    font-size: 36px;
+    padding-top: 12rem;
+  }
+}
+@media (max-width: 550px) {
+  .components-list li a {
+    font-size: 10px;
+    padding: 0 1rem;
+  }
+  .components-list div {
+    padding: 1rem 1rem;
+  }
+}

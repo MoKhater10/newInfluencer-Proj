@@ -1,0 +1,157 @@
+.influencer .person {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 150px !important;
+}
+.influencer .person .websites div {
+  padding: 10px 15px;
+  background-color: var(--primaryColor);
+  color: var(--btnColor);
+  border-radius: 12px;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid var(--cardColor);
+}
+.influencer .person .websites div:hover {
+  padding: 10px 15px;
+  background-color: white;
+  color: var(--primaryColor);
+  border-radius: 12px;
+  border: 1px solid var(--primaryColor);
+}
+.influencer .person .darb div {
+  padding: 10px 15px;
+  background: linear-gradient(to left, rgb(33, 202, 222), transparent 90%),
+    linear-gradient(to right, rgb(17, 212, 209), transparent 90%);
+  color: white;
+  border-radius: 12px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.influencer .person .darb div:hover {
+  padding: 10px 15px;
+  background: white;
+  color: #022444;
+  border: 1px solid black;
+}
+.influencer .person .text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.influencer .person h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--primaryColor);
+  margin-bottom: 0;
+}
+.influencer .person p {
+  margin-bottom: 0;
+  font-size: 35px;
+  color: #0224447a;
+  letter-spacing: 1px;
+}
+
+.influencer .person .image {
+  min-width: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.influencer .person .image .influencer-profile {
+  width: 100%;
+}
+.btn-add-influencer {
+  margin-top: 2rem;
+  padding: 0.5rem 4rem;
+}
+.websites-btn-add-influencer {
+  background-color: var(--primaryColor);
+  color: var(--btnColor);
+  box-shadow: -1px 3px 7px 5px rgb(59 59 63 / 52%);
+}
+.websites-btn-add-influencer:hover {
+  background-color: white;
+  border: 1px solid var(--primaryColor);
+}
+.darb-btn-add-influencer {
+  background: linear-gradient(to left, rgb(33, 202, 222), transparent 90%),
+    linear-gradient(to right, rgb(17, 212, 209), transparent 90%);
+  color: white;
+  border: none;
+}
+.darb-btn-add-influencer:hover {
+  background: white;
+  color: #022444;
+  border: 1px solid black;
+}
+.icons-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icons-div .icon-del {
+  font-size: 20px;
+}
+.infl-container {
+  padding: 0 15%;
+}
+@media only screen and (max-width: 992px) {
+  .influencer .person p {
+    font-size: 18px;
+  }
+  .influencer .person {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .influencer .person .into div {
+    padding: 10px 15px;
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primaryColor);
+  }
+  .influencer .person .into div:hover {
+    padding: 10px 15px;
+    background-color: white;
+    color: var(--primaryColor);
+    border-radius: 12px;
+    border: 1px solid var(--primaryColor);
+  }
+  .influencer .person .text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .influencer .person h1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--primaryColor);
+    margin-bottom: 0;
+  }
+  .influencer .person p {
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #0224447a;
+    letter-spacing: 1px;
+  }
+  .influencer .person .image {
+    width: 13%;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .influencer .person .text h1 {
+    font-size: 30px;
+  }
+  .influencer .person .text p {
+    font-size: 30px;
+  }
+}

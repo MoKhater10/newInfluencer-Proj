@@ -1,0 +1,23 @@
+:root {
+  --main-section-padding: 5rem 0;
+  --main-section-margin: 0 0 5rem 0;
+}
+
+.smou-homepage {
+  background: linear-gradient(to left, #db3737, #002762);
+}
+.btn-smoue-parent-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(219, 55, 55), rgb(0, 39, 98));
+    width: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.btn-smoue-parent-more button {
+  color: white;
+}
+.btn-smoue-parent-more:hover{
+  color: white;
+}

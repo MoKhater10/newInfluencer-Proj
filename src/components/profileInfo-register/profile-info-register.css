@@ -1,0 +1,141 @@
+.profile-info-register .influencer-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.profile-info-register .influencer-form .influencer-form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.profile-info-register .influencer-form .influencer-form-left {
+  display: grid;
+  gap: 2rem;
+}
+.double-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile-info-register .influencer-form .form-sec {
+  display: flex;
+  flex-direction: column;
+}
+.profile-info-register .influencer-form .form-sec label,
+.profile-info-register .influencer-form .double-div label {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+.profile-info-register .influencer-form .form-sec input,
+.profile-info-register .influencer-form .double-div input,
+.profile-info-register .influencer-form textarea {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+}
+.profile-info-register .influencer-form .form-sec select {
+  padding: 0.4rem 1rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+}
+.profile-info-register .influencer-form .form-sec select {
+  cursor: pointer;
+}
+.profile-info-register .influencer-form textarea {
+  height: 10rem;
+}
+.profile-info-register .influencer-form .form-sec input::placeholder,
+.profile-info-register .influencer-form .form-sec select::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ababab;
+}
+
+.profile-info-register .influencer-form .form-sec input[type="file"] {
+  border: 1px solid #c2c2c2;
+  color: transparent;
+  padding: 0.3rem;
+}
+.profile-info-register .btn-next {
+  background-color: var(--primaryColor);
+  color: white;
+  width: 36%;
+  padding: 0.3rem;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+.selected {
+  background-color: grey;
+}
+.notSelected {
+  background-color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .profile-info-register .influencer-form {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .profile-info-register .influencer-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .profile-info-register .influencer-form .influencer-form-right {
+    gap: 1rem;
+  }
+  .profile-info-register .influencer-form .form-sec label {
+    font-size: 15px;
+  }
+  .profile-info-register .btn-next {
+    margin-bottom: 8rem;
+    margin-top: -2rem;
+  }
+  .profile-info-register .influencer-form .form-sec input::placeholder,
+  .profile-info-register .influencer-form .form-sec select::placeholder {
+    font-size: 12px;
+  }
+  .profile-info-register .btn-next {
+    font-size: 15px;
+  }
+  .notSelected,
+  .selected {
+    background-color: white;
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .profile-info-register .influencer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-info-register .influencer-form .form-sec {
+    gap: 0.5rem;
+  }
+  .profile-info-register .btn-next {
+    width: 35vw;
+  }
+  .profile-info-register .influencer-form .influencer-form-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile-info-register .influencer-form .influencer-form-right {
+    width: 100%;
+  }
+  .profile-info-register .btn-next {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}

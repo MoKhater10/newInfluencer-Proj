@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+}
+.hero .top {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+  background-position: center;
+}
+.hero .top .text h1.hero-title {
+  color: var(--lineColor);
+  font-size: 52px;
+  margin-bottom: 2rem;
+}
+.hero .top .text h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 71px;
+  width: 70%;
+  margin: auto;
+  color: white;
+  font-weight: 700;
+}
+.hero .top .scroll {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e6e6e6;
+
+  cursor: pointer;
+}
+.hero .top .scroll p {
+  text-align: center;
+  font-size: 25px;
+}
+.hero .top .scroll .icon {
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  animation: bouncing 1.5s infinite;
+}
+.hero .bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 40px;
+}
+.hero .bottom p {
+  font-size: 30px;
+  line-height: 60px;
+}
+.hero .bottom .image {
+  width: 100%;
+  height: 100%;
+}
+.hero .bottom img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.whoUsParent {
+  padding: 0;
+  margin: auto;
+}
+.whoUsParentDiv {
+  background-color: rgba(255, 106, 0, 1);
+  border-radius: 18px;
+}
+.warqaDiv {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .container.who-we-are .row {
+    flex-direction: column-reverse;
+  }
+  .hero .bottom p {
+    text-align: center;
+  }
+  .hero .top .text h1 {
+    font-size: 33px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 23px;
+  }
+  .hero .top .scroll p {
+    font-size: 22px;
+  }
+  .hero .top .scroll .icon svg {
+    font-size: 24px;
+  }
+  .hero .top .scroll {
+    bottom: 0;
+  }
+}
